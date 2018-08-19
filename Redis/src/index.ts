@@ -3,6 +3,8 @@ import * as redis from 'redis'
 const redisUrl = 'redis://127.0.0.1:6379'
 const client   = redis.createClient(redisUrl)
 
+// client.flushall() // 'drop' the redis
+
 // Tipos básicos
 client.set('nome', 'Thalita Medeiros', redis.print)
 client.get('senha', redis.print) // ou client.get('senha', (err, value) => console.log('Reply: ', value))
