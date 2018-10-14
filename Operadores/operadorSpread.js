@@ -11,3 +11,11 @@ console.log(spreadComObjeto) // => Saída
 // email: 'angelo@email.com',
 // ativo: true,
 // celular: 83986067967 }
+
+function chico (x, y, z) {
+  console.log(x + y + z)
+}
+
+const valores = [1, 2, 4]
+
+chico(...valores)
